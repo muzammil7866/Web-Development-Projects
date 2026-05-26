@@ -9,15 +9,15 @@ from pathlib import Path
 import argparse
 import subprocess
 import shlex
+import sys
 
 from playwright.sync_api import sync_playwright
 
 
 def run_pytest() -> str:
-    # run pytest for the fastapi_app tests
-    proc = subprocess.run(
-        ["python", "-m", "pytest", "fastapi_app/tests"], capture_output=True, text=True
-    )
+    # run pytest for the fastapi_app tests using the same Python interpreter
+    cmd = [sys.executable, "-m", "pytest", "fastapi_app/tests"]
+    proc = subprocess.run(cmd, capture_output=True, text=True)
     return proc.stdout + "\n" + proc.stderr
 
 
