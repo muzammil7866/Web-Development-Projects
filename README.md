@@ -24,3 +24,22 @@ This repository serves as a personal laboratory and showcase for my work. It bri
 * **CMS:** WordPress
 
 ---
+
+## Projects
+
+### FastAPI
+
+- [fastapi_app](fastapi_app/README.md) - the main FastAPI project in this repository, built as a package-based API with CRUD routes, tests, and Docker support.
+- [Hands on Learning FastAPI](Hands%20on%20Learning%20FastAPI/Concepts/README.md) - the tutorial and practice area with small FastAPI examples.
+
+### Flask
+
+- [Flask WebApp Practice](Flask%20WebApp%20Practice/README.md) - Flask practice project with tests and scripts.
+- [Flask To Do App for Practice](Flask%20To%20Do%20App%20for%20Practice/README.md) - a small Flask to-do application.
+
+### Frontend
+
+- [HTML Comprehensive Hands On](HTML%20Comprehensive%20Hands%20On/README.md) - HTML and frontend practice materials.
+
+---
+
