@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Cheatsheet</title>
+	<meta name="description" content="A compact HTML cheatsheet for common tags, attributes, layouts, forms, and media.">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+	<header class="page-banner">
+		<a class="back-link" href="index.html">← Back to Home</a>
+		<h1>HTML Cheatsheet</h1>
+		<p>A quick reference for the HTML tags and patterns you will use most often.</p>
+	</header>
+
+	<main class="stacked">
+		<section class="card">
+			<h2>Document skeleton</h2>
+			<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="UTF-8"&gt;
+	&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+	&lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;!-- visible content --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+		</section>
+
+		<section class="card">
+			<h2>Core tags</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Tag</th>
+						<th>Use</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr><td><code>h1</code> to <code>h6</code></td><td>Headings in descending importance.</td></tr>
+					<tr><td><code>p</code></td><td>Paragraph text.</td></tr>
+					<tr><td><code>a</code></td><td>Links to pages, files, or sections.</td></tr>
+					<tr><td><code>img</code></td><td>Embedded images with meaningful alt text.</td></tr>
+					<tr><td><code>ul</code>, <code>ol</code>, <code>li</code></td><td>Unordered and ordered lists.</td></tr>
+					<tr><td><code>table</code></td><td>Tabular data.</td></tr>
+					<tr><td><code>form</code></td><td>User input and submission.</td></tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="grid two-column">
+			<article class="card">
+				<h2>Semantic layout</h2>
+				<ul class="feature-list">
+					<li><code>header</code>: Intro area or page banner.</li>
+					<li><code>nav</code>: Main navigation.</li>
+					<li><code>main</code>: Unique page content.</li>
+					<li><code>section</code>: Themed group of content.</li>
+					<li><code>article</code>: Self-contained content.</li>
+					<li><code>aside</code>: Supporting or related content.</li>
+					<li><code>footer</code>: Closing information.</li>
+				</ul>
+			</article>
+
+			<article class="card">
+				<h2>Important attributes</h2>
+				<ul class="feature-list">
+					<li><code>href</code> for links.</li>
+					<li><code>src</code> and <code>alt</code> for images.</li>
+					<li><code>id</code> for unique anchors and labels.</li>
+					<li><code>class</code> for reusable styling hooks.</li>
+					<li><code>name</code> for form fields.</li>
+					<li><code>aria-label</code> for accessible naming when needed.</li>
+				</ul>
+			</article>
+		</section>
+
+		<section class="card">
+			<h2>Forms checklist</h2>
+			<ol class="feature-list">
+				<li>Pair every input with a matching <code>label</code>.</li>
+				<li>Use the correct type, such as <code>email</code>, <code>password</code>, or <code>number</code>.</li>
+				<li>Add placeholder text only as a hint, not as the label.</li>
+				<li>Use <code>button</code> for actions and submission.</li>
+				<li>Mark required fields with <code>required</code> when appropriate.</li>
+			</ol>
+		</section>
+
+		<section class="grid two-column">
+			<article class="card">
+				<h2>Media</h2>
+				<ul class="feature-list">
+					<li>Use <code>img</code> for pictures with descriptive alt text.</li>
+					<li>Use <code>audio</code> and <code>video</code> for media playback.</li>
+					<li>Use <code>figure</code> and <code>figcaption</code> for grouped media.</li>
+				</ul>
+			</article>
+
+			<article class="card">
+				<h2>Best practices</h2>
+				<ul class="feature-list">
+					<li>Write one clear <code>h1</code> per page.</li>
+					<li>Prefer semantic elements over generic <code>div</code> wrappers.</li>
+					<li>Keep indentation consistent.</li>
+					<li>Use readable link text instead of “click here”.</li>
+					<li>Validate your markup before committing.</li>
+				</ul>
+			</article>
+		</section>
+	</main>
+</body>
+</html>
