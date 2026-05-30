@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply | BSc Artificial Intelligence | NexTech University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">NexTech <span>University</span></a>
+            <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#curriculum">Curriculum</a></li>
+                <li><a href="index.html#fees">Fees</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="apply.html" class="btn-apply">Apply Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <a href="index.html" class="back-link">&larr; Back to Programme Page</a>
+        <h1>Undergraduate Application</h1>
+        <p>BSc Artificial Intelligence &mdash; Academic Year 2025/26</p>
+    </div>
+
+    <!-- Application Form -->
+    <div class="form-container">
+
+        <form action="success.html" method="get">
+
+            <!-- Personal Information -->
+            <div class="form-section">
+                <h3>Personal Information</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name *</label>
+                        <input type="text" id="fname" name="fname" placeholder="e.g. Muzammil" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name *</label>
+                        <input type="text" id="lname" name="lname" placeholder="e.g. Sohail" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+92 300 0000000" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="dob">Date of Birth *</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="nationality">Nationality *</label>
+                        <select id="nationality" name="nationality" required>
+                            <option value="" disabled selected>Select nationality</option>
+                            <option value="PK">Pakistani</option>
+                            <option value="US">American</option>
+                            <option value="UK">British</option>
+                            <option value="IN">Indian</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Academic Background -->
+            <div class="form-section">
+                <h3>Academic Background</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="last-school">Previous School / College *</label>
+                        <input type="text" id="last-school" name="last_school" placeholder="e.g. Islamabad Model College" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="qualification">Highest Qualification *</label>
+                        <select id="qualification" name="qualification" required>
+                            <option value="" disabled selected>Select qualification</option>
+                            <option value="matric">Matriculation (Grade 10)</option>
+                            <option value="fsc">Intermediate / FSc / A-Levels</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="percentage">Overall Grade / Percentage *</label>
+                        <input type="text" id="percentage" name="percentage" placeholder="e.g. 85% or A Grade">
+                    </div>
+                    <div class="form-group">
+                        <label for="grad-year">Graduation Year *</label>
+                        <input type="number" id="grad-year" name="grad_year" placeholder="e.g. 2024" min="2010" max="2026">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programme Preferences -->
+            <div class="form-section">
+                <h3>Programme Preferences</h3>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="entry-year">Intended Start Year *</label>
+                        <select id="entry-year" name="entry_year" required>
+                            <option value="" disabled selected>Select year</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="funding">Funding Type *</label>
+                        <select id="funding" name="funding" required>
+                            <option value="" disabled selected>Select type</option>
+                            <option value="self">Self-funded</option>
+                            <option value="merit">Applying for Merit Scholarship</option>
+                            <option value="need">Applying for Need-based Aid</option>
+                            <option value="sponsored">Government / Corporate Sponsored</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="interest">Primary Area of Interest *</label>
+                    <select id="interest" name="interest" required>
+                        <option value="" disabled selected>Select interest area</option>
+                        <option value="ml">Machine Learning &amp; Deep Learning</option>
+                        <option value="nlp">Natural Language Processing</option>
+                        <option value="cv">Computer Vision</option>
+                        <option value="robotics">Robotics &amp; Autonomous Systems</option>
+                        <option value="data">Data Science &amp; Analytics</option>
+                        <option value="ethics">AI Ethics &amp; Policy</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Statement of Purpose -->
+            <div class="form-section">
+                <h3>Statement of Purpose</h3>
+                <div class="form-group">
+                    <label for="sop">
+                        Why do you want to study Artificial Intelligence? (150–300 words) *
+                    </label>
+                    <textarea id="sop" name="sop" rows="7"
+                        placeholder="Tell us about your passion for AI, your goals, and what you hope to achieve with this degree..."></textarea>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <div class="form-submit">
+                <button type="submit" class="btn-submit">Submit Application</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 NexTech University &mdash; Department of Artificial Intelligence &nbsp;|&nbsp;
+        <a href="index.html">Home</a> &nbsp;|&nbsp; <a href="index.html#contact">Contact</a></p>
+    </footer>
+
+</body>
+</html>

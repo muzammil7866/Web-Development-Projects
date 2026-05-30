@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration | EduTrack Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">EduTrack <span>Portal</span></a>
+            <ul class="header-nav">
+                <li><a href="index.html" class="active">Register</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="page-hero-content">
+            <div class="page-hero-badge">Academic Year 2024 – 2025</div>
+            <h1>Student Registration</h1>
+            <p>Fill in your details below to create your student profile and get your roll number assigned.</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+
+        <!-- Step Indicator -->
+        <div class="steps">
+            <div class="step active">
+                <div class="step-num">1</div>
+                <div class="step-label">Personal</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <div class="step-label">Academic</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <div class="step-label">Preferences</div>
+            </div>
+            <div class="step-line"></div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <div class="step-label">Confirm</div>
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <form action="success.html" method="get">
+            <div class="form-card">
+
+                <!-- Section 1: Personal Info -->
+                <div class="form-card-header">
+                    <h2>Personal Information</h2>
+                    <p>Fields marked with * are required.</p>
+                </div>
+                <div class="form-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">First Name <span class="required-star">*</span></label>
+                            <input type="text" id="fname" name="fname" placeholder="e.g. Muzammil" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lname">Last Name <span class="required-star">*</span></label>
+                            <input type="text" id="lname" name="lname" placeholder="e.g. Bin Sohail" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required-star">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="you@university.edu.pk" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+92 300 0000000">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth <span class="required-star">*</span></label>
+                            <input type="date" id="dob" name="dob" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender">
+                                <option value="" disabled selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other / Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-divider"></div>
+
+                <!-- Section 2: Academic Info -->
+                <div class="form-card-header">
+                    <h2>Academic Details</h2>
+                    <p>Your department, section, and programme information.</p>
+                </div>
+                <div class="form-body">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="department">Department <span class="required-star">*</span></label>
+                            <select id="department" name="department" required>
+                                <option value="" disabled selected>Select department</option>
+                                <option value="cs">Computer Science</option>
+                                <option value="se">Software Engineering</option>
+                                <option value="ai">Artificial Intelligence</option>
+                                <option value="ds">Data Science</option>
+                                <option value="ict">Information &amp; Communication Technology</option>
+                                <option value="ee">Electrical Engineering</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="section">Section <span class="required-star">*</span></label>
+                            <select id="section" name="section" required>
+                                <option value="" disabled selected>Select section</option>
+                                <option value="A1">A1</option>
+                                <option value="A2">A2</option>
+                                <option value="B1">B1</option>
+                                <option value="B2">B2</option>
+                                <option value="C1">C1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="year">Year of Study <span class="required-star">*</span></label>
+                            <select id="year" name="year" required>
+                                <option value="" disabled selected>Select year</option>
+                                <option value="1">Year 1 (Freshman)</option>
+                                <option value="2">Year 2 (Sophomore)</option>
+                                <option value="3">Year 3 (Junior)</option>
+                                <option value="4">Year 4 (Senior)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="semester">Current Semester</label>
+                            <select id="semester" name="semester">
+                                <option value="" disabled selected>Select semester</option>
+                                <option value="1">Semester 1</option>
+                                <option value="2">Semester 2</option>
+                                <option value="3">Semester 3</option>
+                                <option value="4">Semester 4</option>
+                                <option value="5">Semester 5</option>
+                                <option value="6">Semester 6</option>
+                                <option value="7">Semester 7</option>
+                                <option value="8">Semester 8</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-divider"></div>
+
+                <!-- Section 3: Technology Preferences -->
+                <div class="form-card-header">
+                    <h2>Technology &amp; Interests</h2>
+                    <p>Help us understand your background and areas of interest.</p>
+                </div>
+                <div class="form-body">
+                    <div class="form-group">
+                        <label>Preferred Programming Language</label>
+                        <div class="options-grid">
+                            <div class="option-chip">
+                                <input type="radio" id="lang-py" name="fav_language" value="Python">
+                                <label for="lang-py">Python</label>
+                            </div>
+                            <div class="option-chip">
+                                <input type="radio" id="lang-js" name="fav_language" value="JavaScript">
+                                <label for="lang-js">JavaScript</label>
+                            </div>
+                            <div class="option-chip">
+                                <input type="radio" id="lang-java" name="fav_language" value="Java">
+                                <label for="lang-java">Java</label>
+                            </div>
+                            <div class="option-chip">
+                                <input type="radio" id="lang-cpp" name="fav_language" value="C++">
+                                <label for="lang-cpp">C++</label>
+                            </div>
+                            <div class="option-chip">
+                                <input type="radio" id="lang-html" name="fav_language" value="HTML/CSS">
+                                <label for="lang-html">HTML/CSS</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Areas of Interest (select all that apply)</label>
+                        <div class="options-grid">
+                            <div class="option-chip">
+                                <input type="checkbox" id="int-web" name="interests" value="web">
+                                <label for="int-web">Web Development</label>
+                            </div>
+                            <div class="option-chip">
+                                <input type="checkbox" id="int-ml" name="interests" value="ml">
+                                <label for="int-ml">Machine Learning</label>
+                            </div>
+                            <div class="option-chip">
+                                <input type="checkbox" id="int-mobile" name="interests" value="mobile">
+                                <label for="int-mobile">Mobile Apps</label>
+                            </div>
+                            <div class="option-chip">
+                                <input type="checkbox" id="int-data" name="interests" value="data">
+                                <label for="int-data">Data Science</label>
+                            </div>
+                            <div class="option-chip">
+                                <input type="checkbox" id="int-cyber" name="interests" value="cyber">
+                                <label for="int-cyber">Cybersecurity</label>
+                            </div>
+                            <div class="option-chip">
+                                <input type="checkbox" id="int-cloud" name="interests" value="cloud">
+                                <label for="int-cloud">Cloud Computing</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bio">Short Bio / Goals</label>
+                        <textarea id="bio" name="bio" rows="4"
+                            placeholder="Tell us a little about yourself and what you hope to achieve..."></textarea>
+                        <div class="hint">Optional. This will appear on your student profile card.</div>
+                    </div>
+                </div>
+
+                <!-- Form Footer -->
+                <div class="form-footer">
+                    <button type="submit" class="btn-next">
+                        Complete Registration &#8594;
+                    </button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 EduTrack Portal &mdash; <a href="index.html">Register</a> &nbsp;|&nbsp; <a href="profile.html">View Profile</a></p>
+    </footer>
+
+</body>
+</html>
